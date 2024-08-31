@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #dbc2a4; /* couleur de fond */
+    color: #2c1d27; /* couleur du texte */
+    font-size: 1rem;
+}
+
+/* Container principal */
+.cv-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px;
+    border-right: 2px solid #2c1d27; /* bordure droite */
+}
+
+/* Header */
+.cv-header {
+    background-color: #782221; /* couleur d'arrière-plan du header */
+    color: #ffffff; /* couleur du texte du header */
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cv-header__photo-link {
+    display: inline-block;
+}
+
+.cv-header__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    border: 3px solid #2c1d27; /* bordure autour de la photo */
+    transition: transform 0.3s ease;
+}
+
+.cv-header__photo-link:hover .cv-header__photo {
+    cursor: zoom-in;
+    transform: scale(1.05);
+}
+
+/* Sections */
+.cv-section {
+    padding: 20px;
+    background-color: #ffffff; /* couleur de fond des sections */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cv-section__title {
+    font-family: 'Lato', sans-serif;
+    color: #782221; /* couleur des titres */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.cv-section__text {
+    font-size: 1rem;
+}
+
+.cv-section__text--indent {
+    text-indent: 20px;
+}
+
+.cv-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cv-section__item {
+    padding: 10px 0;
+    border-right: 3px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.cv-section__item:hover {
+    border-right: 3px solid #782221; /* bordure au survol */
+}
+
+/* Liens et contacts */
+.cv-section__contact {
+    color: #782221; /* couleur des contacts */
+    text-decoration: none;
+}
+
+.cv-section__contact a:hover {
+    text-decoration: underline;
+}
+
+.cv-section__social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.cv-section__social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.cv-section__social-icon:hover img {
+    opacity: 0.7;
+}
+
+/* Footer */
+.cv-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2c1d27; /* couleur de fond du footer */
+    color: #ffffff; /* couleur du texte du footer */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cv-footer p {
+    margin: 0;
+}
+
+.cv-footer .cv-section__social-icons {
+    margin: 0;
+}
